@@ -30,4 +30,19 @@ namespace BLL.Models
             return new ApplicationDbContext();
         }
     }
+    public class DBcon<T> : IdentityDbContext<ApplicationUser> where T : class
+    {
+        public DBcon()
+            : base("DefaultConnection", throwIfV1Schema: false)
+        {
+        }
+
+        public static DBcon<T> Create()
+        {
+            return new DBcon<T>();
+        }
+        public DbSet<T> Table { get; set; }
+
+    }
+
 }
