@@ -15,7 +15,7 @@ namespace TestGetHub.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "hi my name is amira";
 
             return View();
         }
