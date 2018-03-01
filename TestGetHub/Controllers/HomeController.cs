@@ -22,7 +22,7 @@ namespace TestGetHub.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "the second message";
 
             return View();
         }
